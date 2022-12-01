@@ -4,7 +4,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 
 | Day | Topic | Part 1 | Part 2 | Python | C | Go | Comments |
 |:---:|:---:|---:|---:|:---|:---|:---|:---|
-|[01](https://adventofcode.com/2022/day/1)|--|--|--|--|--|--|--|
+|[01](https://adventofcode.com/2022/day/1)|lists|6294|5367|[python](python/01.py)|--|--|elf calories|
 |[02](https://adventofcode.com/2022/day/2)|--|--|--|--|--|--|--|
 |[03](https://adventofcode.com/2022/day/3)|--|--|--|--|--|--|--|
 |[04](https://adventofcode.com/2022/day/4)|--|--|--|--|--|--|--|
