@@ -1,6 +1,3 @@
-import this
-
-
 elves = []
 this_elf = []
 with open('python/01.in','r') as f:
