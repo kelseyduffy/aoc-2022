@@ -7,7 +7,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 |[01](https://adventofcode.com/2022/day/1)|lists|6294|5367|[python](python/01.py)|--|--|elf calories|
 |[02](https://adventofcode.com/2022/day/2)|if/else|60559|55533|[python](python/02.py)|--|--|rock paper scissors|
 |[03](https://adventofcode.com/2022/day/3)|sets|54104|48748|[python](python/03.py)|--|--|rucksack|
-|[04](https://adventofcode.com/2022/day/4)|--|--|--|--|--|--|--|
+|[04](https://adventofcode.com/2022/day/4)|overlaps|8711|8226|[python](python/04.py)|--|--|sections|
 |[05](https://adventofcode.com/2022/day/5)|--|--|--|--|--|--|--|
 |[06](https://adventofcode.com/2022/day/6)|--|--|--|--|--|--|--|
 |[07](https://adventofcode.com/2022/day/7)|--|--|--|--|--|--|--|
