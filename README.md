@@ -9,7 +9,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 |[03](https://adventofcode.com/2022/day/3)|sets|54104|48748|[python](python/03.py)|--|--|rucksack|
 |[04](https://adventofcode.com/2022/day/4)|overlaps|8711|8226|[python](python/04.py)|--|--|sections|
 |[05](https://adventofcode.com/2022/day/5)|stacks|51811|50089|[python](python/05.py)|--|--|crate stacks|
-|[06](https://adventofcode.com/2022/day/6)|--|--|--|--|--|--|--|
+|[06](https://adventofcode.com/2022/day/6)|unique|77805|76383|[python](python/06.py)|--|--|datastream|
 |[07](https://adventofcode.com/2022/day/7)|--|--|--|--|--|--|--|
 |[08](https://adventofcode.com/2022/day/8)|--|--|--|--|--|--|--|
 |[09](https://adventofcode.com/2022/day/9)|--|--|--|--|--|--|--|
