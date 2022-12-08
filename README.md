@@ -11,7 +11,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 |[05](https://adventofcode.com/2022/day/5)|stacks|51811|50089|[python](python/05.py)|--|--|crate stacks|
 |[06](https://adventofcode.com/2022/day/6)|unique|77805|76383|[python](python/06.py)|--|--|datastream|
 |[07](https://adventofcode.com/2022/day/7)|travesal|59140|57130|[python](python/07.py)|--|--|directories|
-|[08](https://adventofcode.com/2022/day/8)|--|--|--|--|--|--|--|
+|[08](https://adventofcode.com/2022/day/8)|matrix|42819|36319|[python](python/08.py)|--|--|tree heights|
 |[09](https://adventofcode.com/2022/day/9)|--|--|--|--|--|--|--|
 |[10](https://adventofcode.com/2022/day/10)|--|--|--|--|--|--|--|
 |[11](https://adventofcode.com/2022/day/11)|--|--|--|--|--|--|--|
