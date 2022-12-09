@@ -3,41 +3,47 @@ with open('python/09.in','r') as f:
     for x in f.readlines():
         head_moves.append(x.strip())
 
-tail_positions = set()
+knot_counts = [2,10]
 
-start = [0,0]
-head = [0,0]
-tail = [0,0]
-tail_positions.add((tail[0], tail[1]))
+for knot_count in knot_counts:
 
-for move in head_moves:
-    (dir, count) = move.split(' ')
-    for i in range(int(count)):
-        if dir == 'U':
-            head[1] += 1
-        elif dir == 'D':
-            head[1] -= 1
-        elif dir == 'R':
-            head[0] += 1
-        else:
-            head[0] -= 1
-        
-        if not (abs(tail[0] - head[0]) >= 2 or abs(tail[1] - head[1]) >= 2):
-            # no movement
-            continue
+    tail_positions = set()
+    knots = []
 
-        if tail[0] > head[0]:
-            tail[0] -= 1
-        
-        if tail[0] < head[0]:
-            tail[0] += 1
-        
-        if tail[1] > head[1]:
-            tail[1] -= 1
+    for _ in range(knot_count):
+        knots.append([0,0])
+    tail_positions.add((knots[-1][0], knots[-1][1]))
 
-        if tail[1] < head[1]:
-            tail[1] += 1
-        
-        tail_positions.add((tail[0],tail[1]))
+    for move in head_moves:
+        (dir, count) = move.split(' ')
+        for i in range(int(count)):
+            if dir == 'U':
+                knots[0][1] += 1
+            elif dir == 'D':
+                knots[0][1] -= 1
+            elif dir == 'R':
+                knots[0][0] += 1
+            else:
+                knots[0][0] -= 1
 
-print(len(tail_positions))
+            for i in range(1,knot_count):
+            
+                if not (abs(knots[i][0] - knots[i-1][0]) >= 2 or abs(knots[i][1] - knots[i-1][1]) >= 2):
+                    # no movement
+                    continue
+
+                if knots[i][0] > knots[i-1][0]:
+                    knots[i][0] -= 1
+                
+                if knots[i][0] < knots[i-1][0]:
+                    knots[i][0] += 1
+                
+                if knots[i][1] > knots[i-1][1]:
+                    knots[i][1] -= 1
+
+                if knots[i][1] < knots[i-1][1]:
+                    knots[i][1] += 1
+            
+            tail_positions.add((knots[-1][0],knots[-1][1]))
+
+    print(len(tail_positions))
