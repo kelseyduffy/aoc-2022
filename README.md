@@ -13,7 +13,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 |[07](https://adventofcode.com/2022/day/7)|travesal|59140|57130|[python](python/07.py)|--|--|directories|
 |[08](https://adventofcode.com/2022/day/8)|matrix|42819|36319|[python](python/08.py)|--|--|tree heights|
 |[09](https://adventofcode.com/2022/day/9)|matrix|4707|30678|[python](python/09.py)|--|--|rope|
-|[10](https://adventofcode.com/2022/day/10)|increments|36474|--|[python](python/10.py)|--|--|clock cycles|
+|[10](https://adventofcode.com/2022/day/10)|increments|36474|33310|[python](python/10.py)|--|--|clock cycles|
 |[11](https://adventofcode.com/2022/day/11)|--|--|--|--|--|--|--|
 |[12](https://adventofcode.com/2022/day/12)|--|--|--|--|--|--|--|
 |[13](https://adventofcode.com/2022/day/13)|--|--|--|--|--|--|--|
