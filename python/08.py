@@ -38,7 +38,6 @@ for r in range(1, len(trees)-1):
         visible_trees += visible_down
 
 print(visible_trees)
-#1487 too low
 
 best_scenic_score = 0
 
@@ -77,4 +76,3 @@ for r in range(1, len(trees)-1):
         best_scenic_score = max(best_scenic_score, scenic_score)
 
 print(best_scenic_score)
-# not 470400 (too low)
