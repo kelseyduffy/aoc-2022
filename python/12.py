@@ -27,14 +27,15 @@ max_c = len(heights[0])
 
 for r in range(max_r):
     for c in range(max_c):
-        if heights[r][c] == 'S':
+        if heights[r][c] == 'E':
             starting_rc = (r,c)
             break
 
-current_location = Location(starting_rc, 0, 'a')
+current_location = Location(starting_rc, 0, 'z')
 
+print(current_location.location)
 
-while current_location.height != 'E':
+while current_location.height not in ['a', 'S']:
 
     if current_location.location not in visited:
 
@@ -45,7 +46,7 @@ while current_location.height != 'E':
         if r > 0:
             next_loc = (r-1, c)
             if heights[r-1][c] >= 'a':
-                if ord(heights[r-1][c]) - ord(current_location.height) <= 1:
+                if ord(current_location.height) - ord(heights[r-1][c]) <= 1:
                     bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r-1][c]))
             elif heights[r-1][c] == 'E' and current_location.height in ['y', 'z']:
                 bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r-1][c]))
@@ -54,7 +55,7 @@ while current_location.height != 'E':
         if r < max_r - 1:
             next_loc = (r+1, c)
             if heights[r+1][c] >= 'a':
-                if ord(heights[r+1][c]) - ord(current_location.height) <= 1:
+                if ord(current_location.height) - ord(heights[r+1][c]) <= 1:
                     bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r+1][c]))
             elif heights[r+1][c] == 'E' and current_location.height in ['y', 'z']:
                 bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r+1][c]))
@@ -64,7 +65,7 @@ while current_location.height != 'E':
         if c > 0:
             next_loc = (r, c-1)
             if heights[r][c-1] >= 'a':
-                if ord(heights[r][c-1]) - ord(current_location.height) <= 1:
+                if ord(current_location.height) - ord(heights[r][c-1]) <= 1:
                     bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r][c-1]))
             elif heights[r][c-1] == 'E' and current_location.height in ['y', 'z']:
                 bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r][c-1]))
@@ -74,7 +75,7 @@ while current_location.height != 'E':
         if c < max_c - 1:
             next_loc = (r, c+1)
             if heights[r][c+1] >= 'a':
-                if ord(heights[r][c+1]) - ord(current_location.height) <= 1:
+                if ord(current_location.height) - ord(heights[r][c+1]) <= 1:
                     bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r][c+1]))
             elif heights[r][c+1] == 'E' and current_location.height in ['y', 'z']:
                 bisect.insort(next_locations, Location(next_loc, current_location.steps + 1, heights[r][c+1]))
