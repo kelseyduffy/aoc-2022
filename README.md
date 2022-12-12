@@ -15,7 +15,7 @@ Whatever language I feel like that day. Probably mostly Python and C, maybe some
 |[09](https://adventofcode.com/2022/day/9)|matrix|4707|30678|[python](python/09.py)|--|--|rope|
 |[10](https://adventofcode.com/2022/day/10)|increments|36474|33310|[python](python/10.py)|--|--|clock cycles|
 |[11](https://adventofcode.com/2022/day/11)|queues|32518|24355|[python](python/11.py)|--|--|monkey business|
-|[12](https://adventofcode.com/2022/day/12)|--|--|--|--|--|--|--|
+|[12](https://adventofcode.com/2022/day/12)|path finding|18304|--|[python](python/12.py)|--|--|hiking|
 |[13](https://adventofcode.com/2022/day/13)|--|--|--|--|--|--|--|
 |[14](https://adventofcode.com/2022/day/14)|--|--|--|--|--|--|--|
 |[15](https://adventofcode.com/2022/day/15)|--|--|--|--|--|--|--|
